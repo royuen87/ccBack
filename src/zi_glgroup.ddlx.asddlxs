@@ -1,0 +1,37 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'GlGroup', 
+    typeNamePlural: 'GlGroups', 
+    title: {
+      type: #STANDARD, 
+      label: 'GL Group', 
+      value: 'Zgroup'
+    }
+  }
+}
+annotate view ZI_GlGroup with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_GlGroup', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'GL Group', 
+    position: 1 
+  } ]
+  Zgroup;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  Zsaknr;
+}

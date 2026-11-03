@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_GlGroup_S'
+define service ZUI_GLGROUP {
+  expose ZI_GLGROUP_S as GlGroupAll;
+  expose ZI_GLGROUP as GlGroup;
+}
